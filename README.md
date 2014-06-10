@@ -1,20 +1,20 @@
-# VVV Site Wizard
+# VVV Site Wizard (Apache Edition)
 
 Version 1.1.2
 
-This bash script makes it easy to spin up a new WordPress site using [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV).
+This bash script makes it easy to spin up a new WordPress site using the Apache based fork of [Varying Vagrant Vagrants](https://github.com/ericmann/vvv-apache).
 
 ## Installation
 
-Download the script and run `./vvv` from the directory the script is placed in.
+Download the script and run `./vvv-apache` from the directory the script is placed in.
 
-To run the script from anywhere, you can place `vvv` in a folder included in your PATH environment variable.
+To run the script from anywhere, you can place `vvv-apache` in a folder included in your PATH environment variable.
 
 If you don't want to define the path each time you run the script, open the file and uncomment the line at the top defining `path`. Set that to the root folder of VVV on your machine. **Note:** You do not need to do this if VVV is installed in the default location (`~/vagrant-local/`).
 
 ## Usage
 
-Type `vvv` in the command line to use. None of the options are required: if a required piece of information is not included in the original command, the wizard will prompt you for it.
+Type `vvv-apache` in the command line to use. None of the options are required: if a required piece of information is not included in the original command, the wizard will prompt you for it.
 
 ### Options
 
@@ -33,11 +33,11 @@ Type `vvv` in the command line to use. None of the options are required: if a re
 Examples:
 
 ```
-vvv -a new
-vvv -a create -n mysite -d mysite.dev -v 3.9.1 -x
-vvv -a make -fxil mysite.com -n mysite -d mysite.dev -v 3.9.1
-vvv -a delete mysite
-vvv -a list
+vvv-apache -a new
+vvv-apache -a create -n mysite -d mysite.dev -v 3.9.1 -x
+vvv-apache -a make -fxil mysite.com -n mysite -d mysite.dev -v 3.9.1
+vvv-apache -a delete mysite
+vvv-apache -a list
 ```
 
 ## Site Creation Wizard
